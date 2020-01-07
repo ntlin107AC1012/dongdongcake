@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/cakebuy.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        window.onload=function() {
+          var odiv = document.getElementById("antzone");
+          var obt = document.getElementById("bt");
+          var obtdown =document.getElementById("down");
+          var count = 0;
+          obt.onclick = function () {
+            count = count + 1;
+            odiv.innerHTML = count;
+          }
+          obtdown.onclick=function(){
+              count=count-1;
+              odiv.innerHTML=count;
+          }
+        }
+        </script>
+</head>
+<body>
+    <div class="layout">
+        <!--header-->
+        <header class="cake">
+            <a href="#tab01" id="cakeimage"><img src="../image/cake.png" alt="標題" class="cakeimage"></a>
+            <a href="https://www.facebook.com/">
+                <img src="../image/fb.png" alt="fb" class="fbbtn">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="../image/twitter.png" alt="fb" class="twbtn">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="../image/ig.png" alt="fb" class="igbtn">
+            </a>
+        </header>
+        <div class="brandbackground">
+           
+            <img src="../image/navimg1.png" alt="" class="pdimg">
+            <div class="money">
+                <img src="../image/money.png" alt="" class="moneytxt1">
+                <img src="../image/money2.png" alt="" class="moneytxt2">
+                <div class="money_topdown" >
+                    <img src="../image/top.png" alt="" class="top" id="bt">
+                    <img src="../image/down.png" alt="" class="down" id="down">
+                </div>
+                <div class="amount">
+                   <div id="antzone" style="text-align: right; margin-top: 3x;  font-size: 50px">
+                       0
+                   </div>
+                </div>
+                <img src="../image/cakebuy.png" alt="" style="height: 40px; width: 220px; margin-top: 50px; margin-left: 20px;">
+                <div class="cakebuy" style="display: flex; flex-direction: column;">
+                  <a href="./cakepay.html"> <img src="../image/cakebuytext.png" alt="" style="margin-top: 30px; margin-bottom: 20px; margin-left: 80px;" ></a>
+                   <img src="../image/cakebuytext2.png" alt="" style="margin-left: 80px;">
+                </div>
+            </div>
+
+        </div>
+        
+        <footer class="footer">
+            <img src="../image/cake.png" alt="標題" class="cakeimagefot">
+            <div class="footertxt">
+                <p>TEL: (02)2687-5287</p>
+                <P>TEX: (02)2687-5287</P>
+                <P>EMAIL: dondoncake@gmail.com</P>
+            </div>
+            <img src="../image/footer2.png" alt="" class="contactimg2">
+        </footer>
+    </div>
+</body>
+</html>
